@@ -127,6 +127,52 @@ div.panel{
 		height: 313px;
 		float: right;
 	}
+	&.left {
+		width: @content-width - 327;
+		float: left;
+
+		div.ribbitWrapper {
+			padding: 15px;
+
+			span {
+				&.name {
+					font-size: 18px;
+					color: #58B84E;
+				}
+
+				&.time {
+					font-size: 12px;
+					color: #CCC;
+				}
+			}
+
+			img.avatar {
+				margin: 0 19px 0 20px;
+				float: left;
+			}
+
+			p{
+				margin: 5px 50px 0 90px;
+				padding: 0;
+				text-align: justify;
+				line-height: 1.5;
+				.antialiased(@text-color);
+
+				span.spacing {
+					padding-left: 9px;
+					margin-left: 9px;
+					height: 10px;
+					border-left: 1px solid @border-color;
+				}
+			}
+
+			border-bottom: 1px solid @border-color;
+			&:last-child{
+				border: none;
+			}
+
+		}
+	}
 	*{
 		margin: 6px;
 	}
@@ -147,3 +193,15 @@ div.panel{
 		margin: 18px 0;
 	}
 }
+
+#btnLogOut {
+	float: right;
+	margin: 14px 0 0 0;
+}
+
+textarea.ribbitText {
+	width: 249px;
+	height: 160px;
+	border: 1px solid @border-color;
+}
+
